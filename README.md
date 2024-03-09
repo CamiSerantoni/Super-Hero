@@ -61,10 +61,16 @@ Las herramientas utilizadas son:
 
 Toda el desafío fue desarrollado solo a partir de Bootstrap 5 principalmente y en complemento de una  hoja de estilo en cascada (CSS).
 
+## El proyecto se puede probar funcionalmente  siguiendo el siguiente enlace : 
+
+https://super-hero-px39xr20m-camila-serantonis-projects.vercel.app/
+
 ## Visualización
 De forma general, se logra visualizar de la siguiente manera:
 
 ![image](https://github.com/CamiSerantoni/Super-Hero/assets/152921799/9efd9332-64a3-4c89-92e6-7ea6f4b05c3e)
 ![image](https://github.com/CamiSerantoni/Super-Hero/assets/152921799/3a4bde73-deff-4782-99d6-0d02ba02ff07)
 ![image](https://github.com/CamiSerantoni/Super-Hero/assets/152921799/6258b9b1-4a5f-4dd2-a21c-990256a6873f)
+
+
 
