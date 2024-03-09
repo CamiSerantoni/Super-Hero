@@ -1,0 +1,46 @@
+body {
+  background: #AB0900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 5px;
+}
+
+.chart-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+}
+
+.chart-container {
+  margin-top: 20px;
+  text-align: center;
+  height: auto;
+}
