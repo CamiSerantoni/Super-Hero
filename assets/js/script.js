@@ -22,6 +22,12 @@ function buscarSuperhero() {
   // Obtener el superhéroe
   getSuperhero(id_Superhero);
 }
+
+function limpiar() {
+  $("#input_busqueda").val(""); 
+  $("#cards").empty(); 
+}
+
 function validacion(id) {
   let expresion = /^\d{1,3}$/;
 
