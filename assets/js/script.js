@@ -67,6 +67,8 @@ function getSuperhero(id) {
 }
 
 function creacionCard(Superhero) {
+
+
   let card = `
   <div class="col-12 col-md-7 col-lg-8 mb-5 my-3">
     <div class="row">
@@ -98,7 +100,7 @@ function creacionCard(Superhero) {
       </div>
       <div class="col-md-6">
         <div class="chart-container">
-          <div id="chartContainer-${Superhero.id}" class="chart"></div>
+        <div id="chartContainer-${Superhero.id}" class="chart rounded" style="border-radius: 10px;"></div>
         </div>
       </div>
     </div>
@@ -117,8 +119,6 @@ function creacionCard(Superhero) {
   const ctxPie = document.getElementById(`chartContainer-${Superhero.id}`);
   if (ctxPie) {
     let powerstats = Superhero.powerstats;
-
-    console.log(powerstats);
 
     const labels = Object.keys(powerstats);
     const data = Object.values(powerstats);
