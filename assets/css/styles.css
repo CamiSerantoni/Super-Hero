@@ -40,7 +40,7 @@ body {
 }
 
 .chart-container {
-  margin-top: 20px;
-  text-align: center;
-  height: auto;
+  width: 400px; 
+  height: 300px; 
+  margin: 0 auto; 
 }
