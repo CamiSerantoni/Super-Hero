@@ -1,5 +1,5 @@
 
-# Super Hero 
+# Super Hero ⚡
 
 ## Descripcion de la solución
 
@@ -45,27 +45,27 @@ información específica de cada superhéroe. (2 Puntos)
 errores en la búsqueda. (0.5 Puntos)
 
 
-## Instalación del Proyecto: 
+## Instalación del Proyecto: 💻
 
 para poder instalar y hacer correr el proyecto en nuestro local es necesario: 
 - clonar el proyecto y abrir directamente en el navegador.
 
-## Dependencias:
+## Dependencias: 🧰
 
 Las herramientas utilizadas son: 
 
 - Bootstrap
 - JQuery 
 
-## Estilos:
+## Estilos: 💅
 
 Toda el desafío fue desarrollado solo a partir de Bootstrap 5 principalmente y en complemento de una  hoja de estilo en cascada (CSS).
 
-## El proyecto se puede probar funcionalmente  siguiendo el siguiente enlace : 
+## El proyecto se puede probar funcionalmente  siguiendo el siguiente enlace : 🚀
 
 https://super-hero-px39xr20m-camila-serantonis-projects.vercel.app/
 
-## Visualización
+## Visualización 
 De forma general, se logra visualizar de la siguiente manera:
 
 ![image](https://github.com/CamiSerantoni/Super-Hero/assets/152921799/9efd9332-64a3-4c89-92e6-7ea6f4b05c3e)
