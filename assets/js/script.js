@@ -112,8 +112,7 @@ function creacionCard(Superhero) {
   // Agrega un listener de eventos al botón "Mostrar gráfico"
   $(`#chartContainer-${Superhero.id}`).hide(); // Oculta el gráfico al principio
   $(`button[data-id="${Superhero.id}"]`).click(function () {
-    $(`#chartContainer-${Superhero.id}`).toggle();
-  });
+    $(`#chartContainer-${Superhero.id}`).toggle("fadeIn");
 
   // Crea el gráfico de pastel
   const ctxPie = document.getElementById(`chartContainer-${Superhero.id}`);
@@ -130,11 +129,12 @@ function creacionCard(Superhero) {
     if (allZeros) {
       validatedData.fill(0.01);
     }
-
     let chartPie = new CanvasJS.Chart(`chartContainer-${Superhero.id}`, {
       animationEnabled: true,
       exportEnabled: false,
-      theme: "light1",
+      animationEnabled: true,
+
+      theme: "light2",
       title: {
         text: `Estadísticas de Poder de ${Superhero.name}`,
       },
@@ -142,8 +142,8 @@ function creacionCard(Superhero) {
         {
           type: "pie",
           showInLegend: true,
-          legendText: "{label}",
-          indexLabel: "{label} - {y}",
+          legendText: "{indexLabel}",
+          toolTipContent: "{indexLabel}", 
           dataPoints: labels.map((label, index) => ({
             label: label,
             y: validatedData[index],
@@ -151,7 +151,34 @@ function creacionCard(Superhero) {
         },
       ],
     });
-
+  
+    // Cambia los labels al español usando indexLabel
+    chartPie.options.data[0].dataPoints.forEach((dataPoint) => {
+      switch (dataPoint.label) {
+        case "intelligence":
+          dataPoint.indexLabel = "Inteligencia - " + dataPoint.y;
+          break;
+        case "strength":
+          dataPoint.indexLabel = "Fuerza - " + dataPoint.y;
+          break;
+        case "speed":
+          dataPoint.indexLabel = "Velocidad - " + dataPoint.y;
+          break;
+        case "durability":
+          dataPoint.indexLabel = "Durabilidad - " + dataPoint.y;
+          break;
+        case "power":
+          dataPoint.indexLabel = "Poder - " + dataPoint.y;
+          break;
+        case "combat":
+          dataPoint.indexLabel = "Combate - " + dataPoint.y;
+          break;
+        default:
+          dataPoint.indexLabel = dataPoint.label + " - " + dataPoint.y;
+      }
+    });
+  
     chartPie.render();
-  }
+  }}
+  )
 }
