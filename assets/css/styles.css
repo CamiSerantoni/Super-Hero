@@ -1,14 +1,16 @@
 body {
   background: #AB0900;
-}
-
-* {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-
 }
+
+.content {
+  min-height: 100vh; /* Ensures content fills the viewport height */
+  display: flex; /* Allow stacking of footer */
+  flex-direction: column; /* Stack content on top of footer */
+}
+
 
 .card {
   border: 1px solid #ddd;
@@ -43,4 +45,18 @@ body {
   width: 400px; 
   height: 300px; 
   margin: 0 auto; 
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+header {
+  margin-top: 80px; 
+}
+
+.imgSuper {
+  max-width: 70%;
 }

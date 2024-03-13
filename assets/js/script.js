@@ -72,7 +72,8 @@ function creacionCard(Superhero) {
   let card = `
   <div class="col-12 col-md-7 col-lg-8 mb-5 my-3">
     <div class="row">
-      <div class="col-md-6">
+    <h4 class="card-title text-center fw-bold text-white mb-3">Super Héroe seleccionado: </h4>
+      <div class="col-md-6 mt-1 mb-4">
         <div class="card mx-auto">
           <div class="row">
             <div class="col-md-12">
