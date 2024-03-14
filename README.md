@@ -73,6 +73,6 @@ De forma general, se logra visualizar de la siguiente manera:
 ![image](https://github.com/CamiSerantoni/Super-Hero/assets/152921799/5a024d6e-614a-4ab6-a822-89f156b3f39a)
 ![image](https://github.com/CamiSerantoni/Super-Hero/assets/152921799/22aa7ed1-4e3e-4b06-868c-963e1c6813f7)
 
-### Elaborado por: Camila Serantoni R.
+#### Camila Serantoni R. 
 
 
